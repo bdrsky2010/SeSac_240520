@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoButton: UIButton!
     @IBOutlet weak var threeButton: UIButton!
     
+    @IBOutlet var labelList: [UILabel]!
     @IBOutlet weak var oneLabel: UILabel!
     @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var threeLabel: UILabel!
@@ -35,9 +36,10 @@ class ViewController: UIViewController {
     }
     
     // 하나의 Interface Builder Action으로 여러 버튼에 대응이 가능
-    // 1. 어떤 버튼을 클릭했는 지 어떻게 감지할까.
+    // 1. 어떤 버튼을 클릭했는 지 어떻게 감지할까?
     //  -> currentTitle 활용 (옵셔널 조심, 버전 조심)
     //  -> tag 활용
+    // 2. 아웃렛 뭐 어떻게 못할까? => OutletCollection
     @IBAction func oneButtonClicked(_ sender: UIButton) {
 //        guard let title = sender.currentTitle else { return }
 //        
@@ -54,9 +56,7 @@ class ViewController: UIViewController {
         let tag = sender.tag
         self.count[tag] += 1
         
-        self.oneLabel.text = "\(count[0])번"
-        self.twoLabel.text = "\(count[1])번"
-        self.threeLabel.text = "\(count[2])번"
+        self.labelList[tag].text = "\(count[tag])번"
     }
     
     // 매개변수(parameter)
