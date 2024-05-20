@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var threeLabel: UILabel!
     
+    @IBOutlet weak var textField: UITextField!
+    
     var count = Array(repeating: 0, count: 3)
     
     override func viewDidLoad() {
@@ -34,6 +36,18 @@ class ViewController: UIViewController {
         designButtonUI(twoButton, titleColor: .green, title: "버튼2")
         designButtonUI(threeButton, titleColor: .blue, title: "버튼3")
     }
+    
+    @IBAction func imageViewTapped(_ sender: UITapGestureRecognizer) {
+        print("이미지 탭")
+    }
+    
+    // 키보드를 내리는 방법
+    // 1. did end on exit
+    // 2. view.endEditing(true)
+    @IBAction func keyboardDismiss(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     
     // 하나의 Interface Builder Action으로 여러 버튼에 대응이 가능
     // 1. 어떤 버튼을 클릭했는 지 어떻게 감지할까?
