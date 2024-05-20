@@ -14,6 +14,7 @@
 		7B4DE10C2BFAD40E0038FF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DE10B2BFAD40E0038FF2C /* Assets.xcassets */; };
 		7B4DE10F2BFAD40E0038FF2C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DE10E2BFAD40E0038FF2C /* Base */; };
 		7B4DE1172BFAD41E0038FF2C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DE1162BFAD41E0038FF2C /* .gitignore */; };
+		7B4DE1192BFB11E60038FF2C /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE1182BFB11E60038FF2C /* OptionalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7B4DE10E2BFAD40E0038FF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B4DE1102BFAD40E0038FF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4DE1162BFAD41E0038FF2C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7B4DE1182BFB11E60038FF2C /* OptionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				7B4DE10B2BFAD40E0038FF2C /* Assets.xcassets */,
 				7B4DE10D2BFAD40E0038FF2C /* LaunchScreen.storyboard */,
 				7B4DE1102BFAD40E0038FF2C /* Info.plist */,
+				7B4DE1182BFB11E60038FF2C /* OptionalViewController.swift */,
 			);
 			path = SeSac_240520;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4DE1192BFB11E60038FF2C /* OptionalViewController.swift in Sources */,
 				7B4DE1072BFAD40D0038FF2C /* ViewController.swift in Sources */,
 				7B4DE1032BFAD40D0038FF2C /* AppDelegate.swift in Sources */,
 				7B4DE1052BFAD40D0038FF2C /* SceneDelegate.swift in Sources */,
