@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var threeLabel: UILabel!
     
+    var count = Array(repeating: 0, count: 3)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // (): 함수 호출 연산자
@@ -27,21 +29,34 @@ class ViewController: UIViewController {
         designLebelUI(twoLabel, textColor: .green)
         designLebelUI(threeLabel, textColor: .blue)
         
-        designButtonUI(oneButton, titleColor: .red, title: "1")
-        designButtonUI(twoButton, titleColor: .green, title: "2")
-        designButtonUI(threeButton, titleColor: .blue, title: "3")
+        designButtonUI(oneButton, titleColor: .red, title: "버튼1")
+        designButtonUI(twoButton, titleColor: .green, title: "버튼2")
+        designButtonUI(threeButton, titleColor: .blue, title: "버튼3")
     }
     
-    @IBAction func buttonClicked(_ sender: UIButton) {
-        guard let buttonTitle = sender.titleLabel?.text else { return }
+    // 하나의 Interface Builder Action으로 여러 버튼에 대응이 가능
+    // 1. 어떤 버튼을 클릭했는 지 어떻게 감지할까.
+    //  -> currentTitle 활용 (옵셔널 조심, 버전 조심)
+    //  -> tag 활용
+    @IBAction func oneButtonClicked(_ sender: UIButton) {
+//        guard let title = sender.currentTitle else { return }
+//        
+//        if title == "버튼1" {
+//            self.oneCount += 1
+//            self.oneLabel.text = "\(oneCount)번"
+//        } else if title == "버튼2" {
+//            self.twoCount += 1
+//            self.twoLabel.text = "\(twoCount)번"
+//        } else if title == "버튼3" {
+//            self.threeCount += 1
+//            self.threeLabel.text = "\(threeCount)번"
+//        }
+        let tag = sender.tag
+        self.count[tag] += 1
         
-        if buttonTitle == "1" {
-            self.oneLabel.text = "123"
-        } else if buttonTitle == "2" {
-            self.twoLabel.text = "456"
-        } else if buttonTitle == "3" {
-            self.threeLabel.text = "789"
-        }
+        self.oneLabel.text = "\(count[0])번"
+        self.twoLabel.text = "\(count[1])번"
+        self.threeLabel.text = "\(count[2])번"
     }
     
     // 매개변수(parameter)
