@@ -210,19 +210,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ER0-TB-Bjk">
-                                <rect key="frame" x="39.333333333333343" y="216.33333333333334" width="314.33333333333326" height="419.33333333333326"/>
+                                <rect key="frame" x="30" y="239" width="333" height="249.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ER0-TB-Bjk" secondAttribute="height" multiplier="3:4" id="fgb-lQ-oOO"/>
+                                    <constraint firstAttribute="width" secondItem="ER0-TB-Bjk" secondAttribute="height" multiplier="4:3" id="hwU-hD-pwr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-Ab-fpM">
+                                <rect key="frame" x="96.666666666666657" y="508.66666666666674" width="266.33333333333337" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LEV-Ab-fpM" secondAttribute="height" multiplier="4:3" id="A6I-mP-yzV"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VFH-P0-nKE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ER0-TB-Bjk" firstAttribute="width" secondItem="5pL-ml-F2C" secondAttribute="width" multiplier="0.8" id="oL4-93-GpQ"/>
-                            <constraint firstItem="ER0-TB-Bjk" firstAttribute="centerX" secondItem="5pL-ml-F2C" secondAttribute="centerX" id="rwH-gd-KNh"/>
-                            <constraint firstItem="ER0-TB-Bjk" firstAttribute="centerY" secondItem="5pL-ml-F2C" secondAttribute="centerY" id="ubM-hC-kPv"/>
+                            <constraint firstItem="ER0-TB-Bjk" firstAttribute="leading" secondItem="VFH-P0-nKE" secondAttribute="leading" constant="30" id="0dF-sE-brj"/>
+                            <constraint firstItem="ER0-TB-Bjk" firstAttribute="top" secondItem="VFH-P0-nKE" secondAttribute="top" constant="180" id="2zp-bO-qpC"/>
+                            <constraint firstItem="LEV-Ab-fpM" firstAttribute="width" secondItem="ER0-TB-Bjk" secondAttribute="width" multiplier="0.8" id="6Mp-R5-a97"/>
+                            <constraint firstItem="VFH-P0-nKE" firstAttribute="trailing" secondItem="ER0-TB-Bjk" secondAttribute="trailing" constant="30" id="I4P-Yk-99h"/>
+                            <constraint firstItem="LEV-Ab-fpM" firstAttribute="top" secondItem="ER0-TB-Bjk" secondAttribute="bottom" constant="20" id="fza-t3-AAP"/>
+                            <constraint firstItem="VFH-P0-nKE" firstAttribute="trailing" secondItem="LEV-Ab-fpM" secondAttribute="trailing" constant="30" id="ubz-As-fGH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -235,6 +245,9 @@
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

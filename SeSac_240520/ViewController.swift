@@ -48,7 +48,6 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    
     // 하나의 Interface Builder Action으로 여러 버튼에 대응이 가능
     // 1. 어떤 버튼을 클릭했는 지 어떻게 감지할까?
     //  -> currentTitle 활용 (옵셔널 조심, 버전 조심)
