@@ -17,6 +17,10 @@
 		7B4DE1192BFB11E60038FF2C /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE1182BFB11E60038FF2C /* OptionalViewController.swift */; };
 		7B4DE15D2BFC25B60038FF2C /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE15C2BFC25B60038FF2C /* DateViewController.swift */; };
 		7B4DE15F2BFC63E90038FF2C /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE15E2BFC63E90038FF2C /* CalculateViewController.swift */; };
+		7B4DE1832BFD7B310038FF2C /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE1822BFD7B310038FF2C /* BMIViewController.swift */; };
+		7B4DE1862BFD905A0038FF2C /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4DE1852BFD905A0038FF2C /* FSCalendar */; };
+		7B4DE1892BFD90EB0038FF2C /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4DE1882BFD90EB0038FF2C /* TextFieldEffects */; };
+		7B4DE18C2BFD90F90038FF2C /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4DE18B2BFD90F90038FF2C /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,7 @@
 		7B4DE1182BFB11E60038FF2C /* OptionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
 		7B4DE15C2BFC25B60038FF2C /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		7B4DE15E2BFC63E90038FF2C /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		7B4DE1822BFD7B310038FF2C /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4DE18C2BFD90F90038FF2C /* Toast in Frameworks */,
+				7B4DE1862BFD905A0038FF2C /* FSCalendar in Frameworks */,
+				7B4DE1892BFD90EB0038FF2C /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,7 @@
 				7B4DE1042BFAD40D0038FF2C /* SceneDelegate.swift */,
 				7B4DE1062BFAD40D0038FF2C /* ViewController.swift */,
 				7B4DE1082BFAD40D0038FF2C /* Main.storyboard */,
+				7B4DE1822BFD7B310038FF2C /* BMIViewController.swift */,
 				7B4DE15E2BFC63E90038FF2C /* CalculateViewController.swift */,
 				7B4DE10B2BFAD40E0038FF2C /* Assets.xcassets */,
 				7B4DE10D2BFAD40E0038FF2C /* LaunchScreen.storyboard */,
@@ -95,6 +104,11 @@
 			dependencies = (
 			);
 			name = SeSac_240520;
+			packageProductDependencies = (
+				7B4DE1852BFD905A0038FF2C /* FSCalendar */,
+				7B4DE1882BFD90EB0038FF2C /* TextFieldEffects */,
+				7B4DE18B2BFD90F90038FF2C /* Toast */,
+			);
 			productName = SeSac_240520;
 			productReference = 7B4DE0FF2BFAD40D0038FF2C /* SeSac_240520.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +137,11 @@
 				Base,
 			);
 			mainGroup = 7B4DE0F62BFAD40D0038FF2C;
+			packageReferences = (
+				7B4DE1842BFD905A0038FF2C /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				7B4DE1872BFD90EB0038FF2C /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				7B4DE18A2BFD90F90038FF2C /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 7B4DE1002BFAD40D0038FF2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4DE15D2BFC25B60038FF2C /* DateViewController.swift in Sources */,
+				7B4DE1832BFD7B310038FF2C /* BMIViewController.swift in Sources */,
 				7B4DE1192BFB11E60038FF2C /* OptionalViewController.swift in Sources */,
 				7B4DE1072BFAD40D0038FF2C /* ViewController.swift in Sources */,
 				7B4DE1032BFAD40D0038FF2C /* AppDelegate.swift in Sources */,
@@ -389,6 +409,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B4DE1842BFD905A0038FF2C /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		7B4DE1872BFD90EB0038FF2C /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		7B4DE18A2BFD90F90038FF2C /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B4DE1852BFD905A0038FF2C /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4DE1842BFD905A0038FF2C /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		7B4DE1882BFD90EB0038FF2C /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4DE1872BFD90EB0038FF2C /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		7B4DE18B2BFD90F90038FF2C /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4DE18A2BFD90F90038FF2C /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B4DE0F72BFAD40D0038FF2C /* Project object */;
 }
